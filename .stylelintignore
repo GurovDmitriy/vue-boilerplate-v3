@@ -67,6 +67,7 @@ node_modules
 .env.*.local
 ecosystem.config.js
 deploy-front.sh
+components.d.ts
 
 # Vue 3 #
 ######################

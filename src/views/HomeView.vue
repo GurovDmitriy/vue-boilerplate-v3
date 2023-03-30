@@ -1,6 +1,7 @@
 <template>
   <main>
     <TheHeader />
+    <a-button>button ant</a-button>
   </main>
 </template>
 
