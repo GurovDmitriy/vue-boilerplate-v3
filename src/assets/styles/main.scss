@@ -1,0 +1,84 @@
+@import "variables";
+@import "functions";
+@import "fonts";
+@import "breakpoints";
+@import "typography";
+@import "transitions";
+
+// @include font-face("Inter", "/fonts/Inter/Inter-Thin", 100, normal);
+// @include font-face("Inter", "/fonts/Inter/Inter-ExtraLigth", 200, normal);
+// @include font-face("Inter", "/fonts/Inter/Inter-Light", 300, normal);
+// @include font-face("Inter", "/fonts/Inter/Inter-Regular", 400, normal);
+// @include font-face("Inter", "/fonts/Inter/Inter-Medium", 500, normal);
+// @include font-face("Inter", "/fonts/Inter/Inter-SemiBold", 600, normal);
+// @include font-face("Inter", "/fonts/Inter/Inter-Bold", 700, normal);
+// @include font-face("Inter", "/fonts/Inter/Inter-ExtraBold", 800, normal);
+// @include font-face("Inter", "/fonts/Inter/Inter-Black", 900, normal);
+
+:root {
+  --color-primary: #{$blue};
+  --color-black: #{$black};
+  --color-white: #{$white};
+}
+
+html,
+body {
+  box-sizing: border-box;
+  min-width: $min-width-root;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  color: $color-primary-var;
+  font-weight: 400;
+  font-size: $font-size-root-1;
+  font-family: Inter, Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // auto breakpoint
+  // @include sm-min {
+  //  font-size: $font-size-root-2;
+  // }
+
+  // auto breakpoint
+  @include lg-min {
+    font-size: $font-size-root-3;
+  }
+
+  @include xl-min {
+    font-size: $font-size-root-default;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+#__nuxt {
+  min-height: 100vh;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sr-only {
+  @include sr-only;
+}
+
+.bg-color-blue {
+  background-color: $blue;
+}
+
+.bg-color-white {
+  background-color: $blue;
+}

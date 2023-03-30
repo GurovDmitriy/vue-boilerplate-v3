@@ -1,0 +1,22 @@
+@use "sass:math";
+@import "variables";
+
+@function divide($x, $y) {
+  @return math.div($x, $y);
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return divide($number, ($number * 0 + 1));
+  }
+
+  @return $number;
+}
+
+@function rem($value, $base: $font-size-root-default) {
+  @return divide(strip-unit($value), strip-unit($base)) * 1rem;
+}
+
+@function remxs($value, $base: $font-size-root-1) {
+  @return divide(strip-unit($value), strip-unit($base)) * 1rem;
+}

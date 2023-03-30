@@ -86,3 +86,4 @@ coverage
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+index.html

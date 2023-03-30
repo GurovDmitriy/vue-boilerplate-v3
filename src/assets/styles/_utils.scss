@@ -1,0 +1,50 @@
+@use "sass:math";
+@import "functions";
+
+@mixin aspect-ratio($width: 1, $height: $width, $pseudo: true) {
+  @if $pseudo {
+    &::after {
+      display: block;
+      padding-top: math.percentage(divide($height, $width));
+
+      content: "";
+    }
+  } @else {
+    display: block;
+    padding-top: math.percentage(divide($height, $width));
+  }
+}
+
+@mixin sr-only() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+@mixin dont-break-out {
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+
+  word-break: break-all;
+
+  /* Instead use this non-standard one: */
+
+  word-break: break-word;
+
+  /* These are technically the same, but use both */
+
+  overflow-wrap: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+
+  hyphens: auto;
+}

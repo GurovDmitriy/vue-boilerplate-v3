@@ -1,0 +1,9 @@
+.hide-header-enter-active,
+.hide-header-leave-active {
+  transition: transform 0.3s ease-out;
+}
+
+.hide-header-enter-from,
+.hide-header-leave-to {
+  transform: translate(0, -100%);
+}

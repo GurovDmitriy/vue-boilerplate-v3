@@ -1,0 +1,393 @@
+@import "variables";
+@import "functions";
+@import "breakpoints";
+
+@mixin display-2xl-m() {
+  @include lg-max {
+    font-weight: 700;
+    font-size: remxs(40);
+    line-height: 1.2;
+  }
+}
+
+@mixin display-2xl-d() {
+  @include lg-min {
+    font-weight: 700;
+    font-size: rem(40);
+    line-height: 1.2;
+  }
+}
+
+@mixin display-xl-m() {
+  @include lg-max {
+    font-weight: 700;
+    font-size: remxs(32);
+    line-height: 1.2;
+  }
+}
+
+@mixin display-xl-d() {
+  @include lg-min {
+    font-weight: 700;
+    font-size: rem(32);
+    line-height: 1.2;
+  }
+}
+
+@mixin display-lg-m() {
+  @include lg-max {
+    font-weight: 600;
+    font-size: remxs(24);
+    line-height: 1.2;
+  }
+}
+
+@mixin display-lg-d() {
+  @include lg-min {
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: 1.2;
+  }
+}
+
+@mixin input-m() {
+  @include lg-max {
+    font-weight: 600;
+    font-size: remxs(20);
+    line-height: 1.2;
+  }
+}
+
+@mixin input-d() {
+  @include lg-min {
+    font-weight: 600;
+    font-size: rem(20);
+    line-height: 1.2;
+  }
+}
+
+@mixin text-m() {
+  @include lg-max {
+    font-weight: 400;
+    font-size: remxs(16);
+    line-height: 1.5;
+  }
+}
+
+@mixin text-d() {
+  @include lg-min {
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+}
+
+@mixin text-mobile-m() {
+  @include lg-max {
+    font-weight: 400;
+    font-size: remxs(14);
+    line-height: 1.5;
+  }
+}
+
+@mixin text-mobile-d() {
+  @include lg-min {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 1.5;
+  }
+}
+
+@mixin button-m-m() {
+  @include lg-max {
+    font-weight: 500;
+    font-size: remxs(16);
+    line-height: 1;
+  }
+}
+
+@mixin button-m-d() {
+  @include lg-min {
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 1;
+  }
+}
+
+@mixin button-s-m() {
+  @include lg-max {
+    font-weight: 500;
+    font-size: remxs(14);
+    line-height: 1;
+  }
+}
+
+@mixin button-s-d() {
+  @include lg-min {
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 1;
+  }
+}
+
+@mixin button-l-m() {
+  font-weight: 600;
+  font-size: remxs(16);
+  line-height: 1;
+}
+
+@mixin button-l-d() {
+  @include lg-min {
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 1;
+  }
+}
+
+@mixin tag-m() {
+  @include lg-max {
+    font-weight: 500;
+    font-size: remxs(12);
+    line-height: 1;
+  }
+}
+
+@mixin tag-d() {
+  @include lg-min {
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: 1;
+  }
+}
+
+@mixin tag-m-600() {
+  @include lg-max {
+    font-weight: 600;
+    font-size: remxs(12);
+    line-height: 1;
+  }
+}
+
+@mixin tag-d-600() {
+  @include lg-min {
+    font-weight: 600;
+    font-size: rem(12);
+    line-height: 1;
+  }
+}
+
+@mixin lead-m-m() {
+  @include lg-max {
+    font-weight: 600;
+    font-size: remxs(16);
+    line-height: 1.4;
+  }
+}
+
+@mixin lead-m-d() {
+  @include lg-min {
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 1.4;
+  }
+}
+
+@mixin lead-s-m() {
+  @include lg-max {
+    font-weight: 600;
+    font-size: remxs(14);
+    line-height: 1.2;
+  }
+}
+
+@mixin lead-s-d() {
+  @include lg-min {
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: 1.2;
+  }
+}
+
+@mixin caption-m-m() {
+  @include lg-max {
+    font-weight: 400;
+    font-size: remxs(14);
+    line-height: 1.2;
+  }
+}
+
+@mixin caption-m-d() {
+  @include lg-min {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 1.2;
+  }
+}
+
+@mixin caption-s-m() {
+  @include lg-max {
+    font-weight: 400;
+    font-size: remxs(10);
+    line-height: 1;
+  }
+}
+
+@mixin caption-s-d() {
+  @include lg-min {
+    font-weight: 400;
+    font-size: rem(10);
+    line-height: 1;
+  }
+}
+
+@mixin display-s-m() {
+  @include lg-max {
+    font-weight: 600;
+    font-size: remxs(20);
+    line-height: 1.2;
+  }
+}
+
+@mixin display-s-d() {
+  @include lg-min {
+    font-weight: 600;
+    font-size: remxs(20);
+    line-height: 1.2;
+  }
+}
+
+.display-2xl-m {
+  @include display-2xl-m;
+}
+
+.display-2xl-d {
+  @include display-2xl-d;
+}
+
+.display-xl-m {
+  @include display-xl-m;
+}
+
+.display-xl-d {
+  @include display-xl-d;
+}
+
+.display-lg-m {
+  @include display-lg-m;
+}
+
+.display-lg-d {
+  @include display-lg-d;
+}
+
+.display-s-m {
+  @include display-s-m;
+}
+
+.display-s-d {
+  @include display-s-d;
+}
+
+.text-m {
+  @include text-m;
+}
+
+.text-d {
+  @include text-d;
+}
+
+.text-mobile-m {
+  @include text-mobile-m;
+}
+
+.text-mobile-d {
+  @include text-mobile-d;
+}
+
+.button-m-m {
+  @include button-m-m;
+}
+
+.button-m-d {
+  @include button-m-d;
+}
+
+.button-s-m {
+  @include button-s-m;
+}
+
+.button-s-d {
+  @include button-s-d;
+}
+
+.button-l-m {
+  @include button-l-m;
+}
+
+.button-l-d {
+  @include button-l-d;
+}
+
+.tag-m {
+  @include tag-m;
+}
+
+.tag-d {
+  @include tag-d;
+}
+
+.tag-m-600 {
+  @include tag-m-600;
+}
+
+.tag-d-600 {
+  @include tag-d-600;
+}
+
+.lead-m-m {
+  @include lead-m-m;
+}
+
+.lead-m-d {
+  @include lead-m-d;
+}
+
+.lead-s-m {
+  @include lead-s-m;
+}
+
+.lead-s-d {
+  @include lead-s-d;
+}
+
+.input-m {
+  @include input-m;
+}
+
+.input-d {
+  @include input-d;
+}
+
+.caption-m-m {
+  @include caption-m-m;
+}
+
+.caption-m-d {
+  @include caption-m-d;
+}
+
+.caption-s-m {
+  @include caption-s-m;
+}
+
+.caption-s-d {
+  @include caption-s-d;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.color-white {
+  color: $white;
+}

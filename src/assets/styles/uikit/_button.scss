@@ -1,0 +1,175 @@
+/* default */
+
+.ant-btn[value="default"] {
+  min-width: remxs(48);
+  height: auto;
+  min-height: remxs(48);
+  padding: remxs(14);
+
+  color: $blue;
+  font-weight: 500;
+  font-size: remxs(16);
+  line-height: 1;
+
+  background-color: $white;
+  border-color: transparent;
+  border-radius: 8px;
+
+  @include md-min {
+    min-width: rem(48);
+    min-height: rem(48);
+    padding: rem(14);
+
+    font-size: rem(16);
+    line-height: 1;
+  }
+
+  &:hover {
+    color: $blue;
+
+    border-color: transparent;
+  }
+
+  &:focus {
+    color: $blue;
+
+    border-color: transparent;
+  }
+}
+
+.ant-btn[value="white"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: remxs(16) remxs(32) !important;
+
+  color: $blue;
+  font-weight: 500;
+  font-size: remxs(16);
+  font-style: normal;
+  line-height: 100%;
+
+  background-color: $white;
+  border-radius: remxs(8);
+
+  @include md-min {
+    padding: rem(16) rem(32) !important;
+
+    font-size: rem(16);
+
+    border-radius: rem(8);
+  }
+}
+
+.ant-btn[value="blue-400"] {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: remxs(12) remxs(27);
+
+  color: $blue;
+
+  background-color: $blue-400;
+  border: none;
+  border-radius: remxs(8);
+
+  @include lg-min {
+    padding: rem(16) rem(27);
+
+    border-radius: rem(8);
+  }
+}
+
+.ant-btn[value="grey"] {
+  min-height: 48px;
+
+  padding: 16px 24px;
+
+  color: $blue;
+  font-size: 16px;
+  line-height: 1;
+
+  background-color: $blue-400;
+  border: none;
+  border-radius: 8px;
+}
+
+.ant-btn > .ant-btn-loading-icon {
+  width: remxs(24);
+  height: remxs(24);
+
+  @include lg-min {
+    width: rem(24);
+    height: rem(24);
+
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 1;
+  }
+}
+
+.ant-btn[value="red"] {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: remxs(12) remxs(16);
+
+  color: $red;
+
+  background-color: $red-300;
+  border: none;
+  border-radius: remxs(8);
+
+  @include lg-min {
+    padding: rem(12) rem(16);
+
+    border-radius: rem(8);
+  }
+}
+
+.ant-btn > .icon + span {
+  margin-left: remxs(9);
+
+  @include md-min {
+    margin-left: rem(9);
+  }
+}
+
+.ant-btn > .icon {
+  width: remxs(16);
+
+  @include md-min {
+    width: rem(16);
+  }
+}
+
+.ant-btn[revert] {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  span {
+    margin: 0 8px 0 0;
+  }
+}
+
+.ant-btn[nogap] {
+  padding: 0;
+}
+
+/* primary */
+
+.ant-btn.ant-btn-primary {
+  color: $white;
+
+  background-color: $blue;
+
+  &:hover {
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+  }
+}

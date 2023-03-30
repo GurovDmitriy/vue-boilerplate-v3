@@ -1,0 +1,39 @@
+// color
+$black: #000000;
+$white: #ffffff;
+$red: #e5231d;
+$red-300: #ffefee;
+$blue: #002c54;
+$blue-900: #193a64;
+$blue-800: #99abbb;
+$blue-500: #e1e8eb;
+$blue-400: #f0f4f6;
+$orange: #ee9847;
+$green: #0ebb5e;
+$prussian-blue: #083865;
+
+// colors var
+$color-black-var: #{var(--black)};
+$color-white-var: #{var(--white)};
+$color-primary-var: #{var(--blue)};
+
+// container
+$container-max-width: 1200px;
+$container-width-xs: 86%;
+$container-width-md: 88%;
+$min-width-root: 340px;
+
+// viewport breakpoint
+// antd-v ui
+// $width-xs: 0;
+$width-sm: 576px;
+$width-md: 768px;
+$width-lg: 992px;
+$width-xl: 1200px;
+$width-xxl: 1600px;
+
+// fonts
+$font-size-root-1: 10px;
+$font-size-root-2: 12px;
+$font-size-root-3: 14px;
+$font-size-root-default: 16px;
