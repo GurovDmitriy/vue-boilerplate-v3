@@ -1,9 +1,9 @@
-export default function (axios) {
+export default function (axios, apiVersion) {
   return {
-    getById(payload) {
+    getById(payload, options) {
       const id = payload.id
 
-      return axios.get("https://jsonplaceholder.typicode.com/todos/" + id)
+      return axios.get(`${apiVersion}/todos/${id}`, options)
     },
   }
 }

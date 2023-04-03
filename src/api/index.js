@@ -1,7 +1,7 @@
 import todo from "./todo"
 
-export default function (axios) {
+export default function (axios, apiVersion) {
   return {
-    todo: todo(axios),
+    todo: todo(axios, apiVersion),
   }
 }

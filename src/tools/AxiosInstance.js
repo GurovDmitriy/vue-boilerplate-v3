@@ -6,7 +6,9 @@ export class AxiosInstance {
   static create() {
     if (AxiosInstance._instance !== "object") {
       AxiosInstance._instance = axios.create({
-        baseURL: import.meta.env.VITE_APP_API_BASE_URL,
+        baseURL: `${import.meta.env.VITE_APP_API_BASE_URL}/${
+          import.meta.env.VITE_APP_API_SLUG
+        }`,
       })
     }
 
